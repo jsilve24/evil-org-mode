@@ -55,7 +55,7 @@
     (kbd "RET") 'org-agenda-switch-to
     (kbd "M-RET") 'org-agenda-recenter
 
-    (kbd "SPC") 'org-agenda-show-and-scroll-up
+    ;; (kbd "SPC") 'org-agenda-show-and-scroll-up
     (kbd "<delete>") 'org-agenda-show-scroll-down
     (kbd "<backspace>") 'org-agenda-show-scroll-down
 
