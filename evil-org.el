@@ -735,8 +735,10 @@ Includes tables, list items and subtrees."
 (defun evil-org--populate-heading-bindings ()
   "Bindings for easy heading insertion."
   (evil-define-key 'normal 'evil-org-mode
-    (kbd "O") (evil-org-define-eol-command org-insert-heading)
-    (kbd "M-o") (evil-org-define-eol-command org-insert-subheading)))
+    (kbd "o") (evil-org-define-eol-command org-insert-heading)
+    (kbd "O") (evil-org-define-bol-command org-insert-heading)
+    (kbd "M-o") (evil-org-define-eol-command org-insert-subheading)
+    (kbd "M-O") (evil-org-define-bol-command org-insert-subheading)))
 
 (defun evil-org--populate-calendar-bindings ()
   "Bindings for easy date selection."
