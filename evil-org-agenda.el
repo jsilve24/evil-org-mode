@@ -59,6 +59,8 @@
     (kbd "<delete>") 'org-agenda-show-scroll-down
     (kbd "<backspace>") 'org-agenda-show-scroll-down
 
+    "r" 'org-agenda-redo
+
     ;; motion
     "j" 'org-agenda-next-line
     "k" 'org-agenda-previous-line
