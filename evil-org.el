@@ -632,6 +632,11 @@ Includes tables, list items and subtrees."
 ;;; Keythemes
 (defun evil-org--populate-base-bindings ()
   "Bindings that are always available."
+<<<<<<< HEAD
+=======
+  ;; (let ((motion-map (evil-get-minor-mode-keymap 'motion 'evil-org-mode)))
+  ;;   (evil-redirect-digit-argument motion-map "0" 'evil-org-beginning-of-line))
+>>>>>>> origin/master
   (evil-define-key 'motion 'evil-org-mode
     (kbd "0") 'evil-org-beginning-of-line
     (kbd "$") 'evil-org-end-of-line
@@ -735,8 +740,10 @@ Includes tables, list items and subtrees."
 (defun evil-org--populate-heading-bindings ()
   "Bindings for easy heading insertion."
   (evil-define-key 'normal 'evil-org-mode
-    (kbd "O") (evil-org-define-eol-command org-insert-heading)
-    (kbd "M-o") (evil-org-define-eol-command org-insert-subheading)))
+    (kbd "o") (evil-org-define-eol-command org-insert-heading)
+    (kbd "O") (evil-org-define-bol-command org-insert-heading)
+    (kbd "M-o") (evil-org-define-eol-command org-insert-subheading)
+    (kbd "M-O") (evil-org-define-bol-command org-insert-subheading)))
 
 (defun evil-org--populate-calendar-bindings ()
   "Bindings for easy date selection."

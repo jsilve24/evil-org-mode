@@ -41,11 +41,11 @@
 
 (defun evil-org-agenda-set-keys ()
   "Set motion state keys for `org-agenda'."
-  (evil-set-initial-state 'org-agenda-mode 'motion)
+  (evil-set-initial-state 'org-agenda-mode 'normal)
 
   ;; Horizontal movements have little use, thus we can override "f" and "t".
   ;; "w", "b", "e", "ge" and their upcase counterparts are preserved.
-  (evil-define-key 'motion org-agenda-mode-map
+  (evil-define-key 'normal org-agenda-mode-map
     ;; Unused keys: D, X
 
     ;; open
@@ -55,9 +55,11 @@
     (kbd "RET") 'org-agenda-switch-to
     (kbd "M-RET") 'org-agenda-recenter
 
-    (kbd "SPC") 'org-agenda-show-and-scroll-up
+    ;; (kbd "SPC") 'org-agenda-show-and-scroll-up
     (kbd "<delete>") 'org-agenda-show-scroll-down
     (kbd "<backspace>") 'org-agenda-show-scroll-down
+
+    "r" 'org-agenda-redo
 
     ;; motion
     "j" 'org-agenda-next-line
@@ -111,8 +113,8 @@
     "x" 'org-agenda-bulk-action
 
     ;; refresh
-    "gr" 'org-agenda-redo
-    "gR" 'org-agenda-redo-all
+    ;; "gr" 'org-agenda-redo
+    ;; "gR" 'org-agenda-redo-all
 
     ;; quit
     "ZQ" 'org-agenda-exit
