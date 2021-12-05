@@ -647,10 +647,10 @@ Includes tables, list items and subtrees."
     (kbd "d") 'evil-org-delete
     (kbd "x") 'evil-org-delete-char
     (kbd "X") 'evil-org-delete-backward-char
-    (kbd "<C-return>") (evil-org-define-eol-command
-                        org-insert-heading-respect-content)
-    (kbd "<C-S-return>") (evil-org-define-eol-command
-                          org-insert-todo-heading-respect-content))
+    ;; (kbd "<C-return>") (evil-org-define-eol-command
+    ;;                     org-insert-heading-respect-content)
+    ;; (kbd "<C-S-return>") (evil-org-define-eol-command
+    ;;                       org-insert-todo-heading-respect-content))
   (evil-define-key '(normal visual) 'evil-org-mode
     (kbd "<tab>") 'org-cycle
     (kbd "g TAB") 'org-cycle
