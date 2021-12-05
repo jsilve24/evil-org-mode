@@ -646,7 +646,7 @@ Includes tables, list items and subtrees."
     (kbd "O") 'evil-org-open-above
     (kbd "d") 'evil-org-delete
     (kbd "x") 'evil-org-delete-char
-    (kbd "X") 'evil-org-delete-backward-char
+    (kbd "X") 'evil-org-delete-backward-char)
     ;; (kbd "<C-return>") (evil-org-define-eol-command
     ;;                     org-insert-heading-respect-content)
     ;; (kbd "<C-S-return>") (evil-org-define-eol-command
