@@ -105,11 +105,12 @@
     "C" 'org-agenda-capture
 
     ;; mark
-    "m" 'org-agenda-bulk-toggle
+    ;; "m" 'org-agenda-bulk-toggle
     "~" 'org-agenda-bulk-toggle-all
     "*" 'org-agenda-bulk-mark-all
     "%" 'org-agenda-bulk-mark-regexp
-    "M" 'org-agenda-bulk-unmark-all
+    "U" 'org-agenda-bulk-unmark-all
+    "M" 'org-agenda-bulk-toggle
     "x" 'org-agenda-bulk-action
 
     ;; refresh
