@@ -7,7 +7,7 @@
 ;; Git-Repository: git://github.com/Somelauw/evil-org-mode.git
 ;; Created: 2012-06-14
 ;; Forked-since: 2017-02-12
-;; Version: 1.0.2
+;; Version: 1.0.3
 ;; Package-Requires: ((emacs "24.4") (evil "1.0"))
 ;; Keywords: evil vim-emulation org-mode key-bindings presets
 
@@ -123,7 +123,7 @@ before calling `evil-org-set-keytheme'."
   "Go to end of line and call provided function.
 FUN function callback
 Optional argument ARGUMENTS arguments to pass to FUN."
-  (obsolete 'evil-org-define-bol-command "0.9.4")
+  (declare (obsolete 'evil-org-define-eol-command "0.9.4"))
   (end-of-visible-line)
   (apply fun arguments)
   (evil-insert nil))
@@ -132,7 +132,7 @@ Optional argument ARGUMENTS arguments to pass to FUN."
   "Go to beginning of line and call provided function.
 FUN function callback
 Optional argument ARGUMENTS arguments to pass to FUN."
-  (obsolete 'evil-org-define-bol-command "0.9.4")
+  (declare (obsolete 'evil-org-define-bol-command "0.9.4"))
   (beginning-of-line)
   (apply fun arguments)
   (evil-insert nil))
